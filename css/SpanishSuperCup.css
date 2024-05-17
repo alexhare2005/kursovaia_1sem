@@ -1,0 +1,400 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+}
+
+header {
+  height: 150px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header #header1stline {
+  height: 100px;
+  display: flex;
+  background-color: #4a9cd6;
+}
+header #header1stline #RM_LOGO_header {
+  margin: 2px 0px 0px 20px;
+  height: 94px;
+}
+header #header1stline .text {
+  font-size: 40px;
+  font-family: Inter;
+  margin: auto;
+}
+header #header2ndline {
+  height: 60px;
+  background-color: #B1DBF9;
+  display: flex;
+  justify-content: center;
+}
+header #header2ndline .OPTIONS {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  font-family: Inter;
+  height: 60px;
+  width: 250px;
+  font-size: 28px;
+}
+header #header2ndline .OPTIONS:hover {
+  background-color: #82B8EB;
+  transition: 0.5s;
+}
+header #headerthirdline {
+  height: 80px;
+  background-color: #DAEDFE;
+  display: flex;
+}
+header #headerthirdline .iconSSCup {
+  margin-left: 30px;
+}
+header #headerthirdline div {
+  display: flex;
+  font-family: Inter;
+  font-size: 40px;
+  align-items: center;
+  margin-left: 40px;
+}
+header #headerfourline {
+  height: 40px;
+  background-color: #DAEDFE;
+  display: flex;
+  justify-content: left;
+}
+header #headerfourline #SSCup {
+  color: rgb(73, 67, 237);
+  border-bottom: 3px solid rgb(73, 67, 237);
+}
+header #headerfourline .OPTIONS {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  font-family: Inter-Regular;
+  height: 37px;
+  width: 250px;
+  font-size: 20px;
+}
+header #headerfourline .OPTIONS:hover {
+  color: rgb(73, 67, 237);
+}
+
+main {
+  margin-top: 200px;
+}
+main .textFinal, main .textsemifinal {
+  font-family: Inter;
+  font-size: 30px;
+  position: relative;
+  margin-left: 18%;
+}
+main .textsemifinal {
+  margin-top: 100px;
+}
+main .game {
+  display: flex;
+  background-color: rgb(205, 212, 212);
+  width: 70%;
+  height: 130px;
+  border: 1px solid black;
+  border-radius: 35px;
+}
+main .game .text {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+main .game .info {
+  display: flex;
+  margin-left: 17%;
+}
+main .game .info div {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+main .game .info figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .game .info figcaption {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .allfinal, main .allsemifinal {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 100px;
+  height: 220px;
+  background-color: #4a9cd6;
+}
+footer img {
+  height: 90px;
+}
+footer #first_footer {
+  display: flex;
+  justify-content: center;
+}
+footer #first_footer img {
+  margin: 15px 10px 0px 0px;
+}
+footer hr {
+  width: 900px;
+}
+footer #second_footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+@media (max-width: 1300px) {
+  main .textFinal, main .textsemifinal {
+    font-size: 28px;
+  }
+  main .allfinal .game .text, main .allsemifinal .game .text {
+    font-size: 20px;
+  }
+  main .allfinal .game .info div, main .allsemifinal .game .info div {
+    font-size: 45px;
+  }
+  main .allfinal .game .info figure img, main .allsemifinal .game .info figure img {
+    height: 80px;
+  }
+  main .allfinal .game .info figcaption, main .allsemifinal .game .info figcaption {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1160px) {
+  main .textFinal, main .textsemifinal {
+    font-size: 25px;
+  }
+  main .allfinal .game, main .allsemifinal .game {
+    height: auto;
+  }
+  main .allfinal .game .text, main .allsemifinal .game .text {
+    font-size: 15px;
+  }
+  main .allfinal .game .info div, main .allsemifinal .game .info div {
+    font-size: 40px;
+  }
+  main .allfinal .game .info figure img, main .allsemifinal .game .info figure img {
+    height: 70px;
+  }
+  main .allfinal .game .info figcaption, main .allsemifinal .game .info figcaption {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1100px) {
+  header #header2ndline {
+    justify-content: left;
+    align-items: center;
+  }
+  header #header2ndline .OPTIONS {
+    display: none;
+  }
+  header #headerthirdline {
+    height: auto;
+  }
+  header #headerthirdline div {
+    font-size: 30px;
+  }
+  header #headerthirdline .iconSSCup img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    width: 200px;
+    font-size: 15px;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 70px;
+  }
+  footer hr {
+    max-width: 700%;
+  }
+  footer #second_footer img {
+    height: 70px;
+  }
+}
+@media (max-width: 1024px) {
+  main {
+    margin-top: 150px;
+  }
+  main .textFinal, main .textsemifinal {
+    font-size: 16px;
+  }
+  main .textsemifinal {
+    margin-top: 60px;
+  }
+  main .allfinal .game, main .allsemifinal .game {
+    height: auto;
+  }
+  main .allfinal .game .text, main .allsemifinal .game .text {
+    font-size: 10px;
+  }
+  main .allfinal .game .info, main .allsemifinal .game .info {
+    margin-left: 15%;
+  }
+  main .allfinal .game .info div, main .allsemifinal .game .info div {
+    font-size: 35px;
+  }
+  main .allfinal .game .info figure img, main .allsemifinal .game .info figure img {
+    height: 60px;
+  }
+  main .allfinal .game .info figcaption, main .allsemifinal .game .info figcaption {
+    font-size: 13px;
+  }
+}
+@media (max-width: 810px) {
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+  }
+  main .allfinal .game .info, main .allsemifinal .game .info {
+    margin-left: 8%;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 50px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 50px;
+  }
+}
+@media (max-width: 660px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 60px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 55px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    font-size: 30px;
+  }
+  header #headerthirdline div {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  header #headerthirdline .iconSSCup img {
+    height: 45px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 20px;
+    width: 120px;
+    font-size: 10px;
+  }
+  main {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 40px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 40px;
+  }
+}
+@media (max-width: 550px) {
+  main .textFinal, main .textsemifinal {
+    font-size: 15px;
+  }
+  main .allfinal .game, main .allsemifinal .game {
+    justify-content: center;
+  }
+  main .allfinal .game .text, main .allsemifinal .game .text {
+    display: none;
+  }
+  main .allfinal .game .info, main .allsemifinal .game .info {
+    margin-left: 0;
+  }
+  main .allfinal .game .info div, main .allsemifinal .game .info div {
+    font-size: 25px;
+  }
+  main .allfinal .game .info figure img, main .allsemifinal .game .info figure img {
+    height: 40px;
+  }
+  main .allfinal .game .info figure figcaption, main .allsemifinal .game .info figure figcaption {
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 40px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 35px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  header #headerthirdline div {
+    font-size: 15px;
+  }
+  header #headerthirdline .iconSSCup img {
+    height: 40px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 20px;
+    width: 100px;
+    font-size: 8px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 30px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 30px;
+  }
+}/*# sourceMappingURL=SpanishSuperCup.css.map */

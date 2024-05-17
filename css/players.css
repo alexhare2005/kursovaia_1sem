@@ -1,0 +1,320 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+}
+
+header {
+  height: 150px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header #header1stline {
+  height: 100px;
+  display: flex;
+  background-color: #4a9cd6;
+}
+header #header1stline #RM_LOGO_header {
+  margin: 2px 0px 0px 20px;
+  height: 94px;
+}
+header #header1stline .text {
+  font-size: 40px;
+  font-family: Inter;
+  margin: auto;
+}
+header #header2ndline {
+  height: 60px;
+  background-color: #B1DBF9;
+  display: flex;
+  justify-content: center;
+}
+header #header2ndline .OPTIONS {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  font-family: Inter;
+  height: 60px;
+  width: 250px;
+  font-size: 28px;
+}
+header #header2ndline .OPTIONS:hover {
+  background-color: #82B8EB;
+}
+
+main .GK, main .DEF, main .MID, main .FOR, main .HC {
+  margin: 0 0 0 30px;
+  display: grid;
+  grid-gap: 50px;
+}
+main .GK a, main .DEF a, main .MID a, main .FOR a, main .HC a {
+  display: grid;
+  color: black;
+  text-decoration: none;
+}
+main .GK div, main .DEF div, main .MID div, main .FOR div, main .HC div {
+  height: 270px;
+  border-radius: 35px;
+  border: 2px solid black;
+}
+main .GK div:hover, main .DEF div:hover, main .MID div:hover, main .FOR div:hover, main .HC div:hover {
+  border: 2px solid red;
+  transition: 0.2s;
+}
+main .h1gk, main .h1def, main .h1mid, main .h1for, main .h1HC {
+  margin-left: 4%;
+  margin-top: 70px;
+  font-size: 40px;
+  font-family: Inter-Bold;
+}
+main .gk1, main .gk2, main .gk3, main .d1, main .d2, main .d3, main .d4, main .d5, main .f1, main .f2, main .f3, main .mid5, main .mid4, main .mid3, main .mid2, main .mid1, main .C {
+  background: linear-gradient(#EDDCDC, #6040DF);
+  position: relative; /* Делаем позиционирование относительным */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Измен ено на flex-end для выравнивания внизу */
+}
+main .gk1 span, main .gk2 span, main .gk3 span, main .d1 span, main .d2 span, main .d3 span, main .d4 span, main .d5 span, main .f1 span, main .f2 span, main .f3 span, main .mid5 span, main .mid4 span, main .mid3 span, main .mid2 span, main .mid1 span, main .C span {
+  position: relative; /* Делаем позиционирование относительным для текста */
+  font-size: 35px;
+  text-align: center;
+  font-family: Inter;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 35px;
+  width: 90%;
+  z-index: 1; /* Устанавливаем z-index, чтобы текст был "над" изображением */
+}
+main .gk1 img, main .gk2 img, main .gk3 img, main .d1 img, main .d2 img, main .d3 img, main .d4 img, main .d5 img, main .f1 img, main .f2 img, main .f3 img, main .mid5 img, main .mid4 img, main .mid3 img, main .mid2 img, main .mid1 img, main .C img {
+  height: 100%;
+  position: absolute; /* Позиционируем изображение абсолютно */
+  z-index: 1; /* Устанавливаем z-index, чтобы изображение было "под" текстом */
+}
+main .GK {
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+main .DEF {
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+main .MID {
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+main .FOR {
+  grid-template-columns: repeat(auto-fill, 200px);
+}
+main .HC {
+  grid-template-columns: 200px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 220px;
+  background-color: #4a9cd6;
+}
+footer img {
+  height: 90px;
+}
+footer #first_footer {
+  display: flex;
+  justify-content: center;
+}
+footer #first_footer img {
+  margin: 15px 10px 0px 0px;
+}
+footer hr {
+  width: 900px;
+}
+footer #second_footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 1024px) {
+  main .h1gk, main .h1def, main .h1mid, main .h1for, main .h1HC {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  main .gk1 span, main .gk2 span, main .gk3 span, main .d1 span, main .d2 span, main .d3 span, main .d4 span, main .d5 span, main .f1 span, main .f2 span, main .f3 span, main .mid5 span, main .mid4 span, main .mid3 span, main .mid2 span, main .mid1 span, main .C span {
+    font-size: 20px;
+    width: 78%;
+  }
+  main .GK {
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+  main .DEF {
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+  main .MID {
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+  main .FOR {
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+  main .HC {
+    grid-template-columns: repeat(auto-fill, 150px);
+  }
+  main .GK, main .DEF, main .MID, main .FOR, main .HC {
+    margin: 0 0 0 20px;
+    grid-gap: 35px;
+  }
+  main .GK div, main .DEF div, main .MID div, main .FOR div, main .HC div {
+    height: 200px;
+  }
+}
+/*///////////////////////////////////////////////////////////////////////*/
+@media (max-width: 1100px) {
+  header #header2ndline {
+    justify-content: left;
+    align-items: center;
+  }
+  header #header2ndline .OPTIONS {
+    display: none;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 70px;
+  }
+  footer hr {
+    max-width: 700%;
+  }
+  footer #second_footer img {
+    height: 70px;
+  }
+}
+@media (max-width: 810px) {
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 50px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 50px;
+  }
+}
+@media (max-width: 660px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 60px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 55px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    font-size: 30px;
+  }
+  header #header2ndline {
+    height: 40px;
+  }
+  header #header2ndline .OPTIONS {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+  }
+  main {
+    margin-bottom: 50px;
+  }
+  main .h1gk, main .h1def, main .h1mid, main .h1for, main .h1HC {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  main .gk1 img, main .gk2 img, main .gk3 img, main .d1 img, main .d2 img, main .d3 img, main .d4 img, main .d5 img, main .f1 img, main .f2 img, main .f3 img, main .mid5 img, main .mid4 img, main .mid3 img, main .mid2 img, main .mid1 img, main .C img {
+    height: 85%;
+  }
+  main .gk1 span, main .gk2 span, main .gk3 span, main .d1 span, main .d2 span, main .d3 span, main .d4 span, main .d5 span, main .f1 span, main .f2 span, main .f3 span, main .mid5 span, main .mid4 span, main .mid3 span, main .mid2 span, main .mid1 span, main .C span {
+    font-size: 12px;
+    width: 60%;
+  }
+  main .GK {
+    grid-template-columns: repeat(auto-fill, 110px);
+  }
+  main .DEF {
+    grid-template-columns: repeat(auto-fill, 110px);
+  }
+  main .MID {
+    grid-template-columns: repeat(auto-fill, 110px);
+  }
+  main .FOR {
+    grid-template-columns: repeat(auto-fill, 110px);
+  }
+  main .HC {
+    grid-template-columns: repeat(auto-fill, 110px);
+  }
+  main .GK, main .DEF, main .MID, main .FOR, main .HC {
+    margin: 0 0 0 15px;
+    grid-gap: 20px;
+  }
+  main .GK div, main .DEF div, main .MID div, main .FOR div, main .HC div {
+    height: 135px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 40px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 40px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 35px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  header #header2ndline {
+    height: 30px;
+  }
+  header #header2ndline .OPTIONS {
+    height: 30px;
+    width: 75px;
+    font-size: 12px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 20px;
+    width: 100px;
+    font-size: 8px;
+  }
+  main .h1gk, main .h1def, main .h1mid, main .h1for, main .h1HC {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 30px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 30px;
+  }
+}/*# sourceMappingURL=players.css.map */

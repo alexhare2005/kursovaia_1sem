@@ -1,0 +1,139 @@
+/* Common Styles */
+header {
+  background-color: #B1DBF9;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+}
+
+.OPTIONS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  height: 60px;
+  width: 250px;
+  transition: background-color 0.5s;
+}
+
+.OPTIONS:hover {
+  background-color: #82B8EB;
+}
+
+/* Wide Screen Menu */
+.wide-menu {
+  display: flex;
+}
+
+/* Narrow Screen Menu */
+.narrow-menu {
+  display: none;
+}
+
+.navigation {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #2d2424;
+  font-family: "Ledger";
+}
+
+.navigation.open {
+  display: block;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  text-align: center;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background-color: #000;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #FAF6F2;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #FAF6F2;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.open {
+  display: flex !important;
+}
+
+@media (max-width: 1000px) {
+  .wide-menu {
+    display: none;
+  }
+  .narrow-menu {
+    display: flex;
+  }
+}/*# sourceMappingURL=ssssssssss.css.map */

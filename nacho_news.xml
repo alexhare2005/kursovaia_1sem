@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <style type="text/css">
+   body{
+.conteiner{
+    width: 100%;
+    .text{
+        margin: 0 auto;
+        width: 70%;
+        h1{
+            font-size: 60px;
+            margin-top: 8%;
+            font-family: Inter-Bold;
+        }
+        p{
+            font-size: 35px;
+            font-family: Inter-Regular;
+        }
+        img{
+            width: 100%;
+            border-radius: 35px;
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1240px) {
+    .conteiner .text {
+        width:75%;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .conteiner .text {
+        width:80%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 400px)
+{
+.conteiner .text {
+        width:90%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+}
+   </style>
+</head>
+<body>
+        <div class="conteiner">
+           <div class="text">
+        <h1>Nacho: “These are the magical nights you dream of as a kid"</h1>
+        <p>“We were brilliant at the back, especially on an individual level,” said the Real Madrid captain</p>
+        <img src="фоткиКурсач\nacho.webp"/>
+        <p><b>Real Madrid's</b> fourth penalty was taken by <b>Nacho</b>, who beat Ederson to cap a superb performance at the Etihad Stadium. The madridista captain analysed the game against Manchester City: “We had to dig deep because this team puts a lot of pressure on you, but we're Madrid and we fought until the end. What's important is that we're in the semi-finals.”</p>
+        <p>“Normally we're the ones who dominate our opponents. It's very difficult to play on this pitch and against a team that plays so well. We showed the other side, defending spectacularly and doing an incredible job in the lower-middle block. We're delighted to have achieved our objective.”</p>
+        <p><b>Penalty shootout</b>
+            <br/>“It looked like we started the shootout poorly but we were able to turn it around. We always fight to the end, this team has an immense sense of pride. These players who have won everything never stop fighting.”</p>   
+        <p><b>Impressive defensive display</b>
+            <br/> “We were brilliant at the back, especially on an individual level. These are the magical nights you dream of as a kid and I’ve still got goosebumps now.”</p>
+        <p><b>Next goal</b>
+            <br/>   “We can celebrate tonight and tomorrow, then we have to turn our attentions to the Clásico, which is a big game in the fight to win LaLiga.”
+        </p>
+    </div>
+        </div>
+</body>
+</html>

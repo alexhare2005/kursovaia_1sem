@@ -1,0 +1,82 @@
+@charset "UTF-8";
+header {
+  height: 150px;
+}
+header #header1stline {
+  height: 100px;
+  display: flex;
+  background-color: #4a9cd6;
+}
+header #header1stline #RM_LOGO_header {
+  margin: 2px 0px 0px 20px;
+  height: 94px;
+}
+header #header1stline #adidas_header {
+  position: absolute;
+  margin: 25px 0px 0px 1300px;
+}
+header #header1stline #flyemirates_header {
+  position: absolute;
+  margin: 30px 0px 0px 1140px;
+}
+header #header2ndline {
+  height: 60px;
+  background-color: #B1DBF9;
+  display: flex;
+  justify-content: center;
+}
+header #header2ndline .OPTIONS {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  font-family: Inter;
+  height: 60px;
+  width: 250px;
+  font-size: 28px;
+}
+header #header2ndline .OPTIONS:hover {
+  background-color: #82B8EB;
+}
+
+main h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Inter-Bold;
+}
+main p {
+  margin-left: 175px;
+  margin-right: 100px;
+  font-size: 35px;
+  font-family: Inter-Regular;
+}
+main .photo {
+  text-align: center;
+}
+main .photo img {
+  width: 900px;
+  border-radius: 35px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 220px;
+  background-color: #4a9cd6;
+}
+footer img {
+  height: 90px;
+}
+footer #first_footer {
+  display: flex;
+  justify-content: center;
+}
+footer #first_footer img {
+  margin: 15px 10px 0px 0px;
+}
+footer hr {
+  width: 900px;
+}
+footer #second_footer {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=kroos_NEWS.css.map */

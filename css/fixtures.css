@@ -1,0 +1,443 @@
+html, body {
+  margin: 0;
+}
+
+header {
+  height: 150px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header #header1stline {
+  height: 100px;
+  display: flex;
+  background-color: #4a9cd6;
+}
+header #header1stline #RM_LOGO_header {
+  margin: 2px 0px 0px 20px;
+  height: 94px;
+}
+header #header1stline .text {
+  font-size: 40px;
+  font-family: Inter;
+  margin: auto;
+}
+header #header2ndline {
+  height: 60px;
+  background-color: #B1DBF9;
+  display: flex;
+  justify-content: center;
+}
+header #header2ndline .OPTIONS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  height: 60px;
+  width: 250px;
+  font-size: 28px;
+}
+header #header2ndline .OPTIONS:hover {
+  background-color: #82B8EB;
+  transition: 0.5s;
+}
+
+main {
+  margin-bottom: 200px;
+}
+main .list {
+  padding: 0%;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 5%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+}
+main .list li {
+  padding: 15px;
+  background-color: #8784bb;
+  border: 2px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+main .list li:hover {
+  color: rgb(136, 17, 183);
+}
+main .conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .conteiner .all_matches {
+  width: 60%;
+}
+main .conteiner .all_matches .element {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.game {
+  display: flex;
+  background-color: rgb(205, 212, 212);
+  width: 100%;
+  height: 130px;
+  border: 1px solid black;
+  border-radius: 35px;
+  align-items: center;
+}
+.game .imageLaliga {
+  display: flex;
+  height: 90px;
+  margin-right: 20%;
+}
+.game .imageSuperCup {
+  margin-left: 2%;
+  display: flex;
+  height: 65px;
+  margin-right: 19%;
+}
+.game .imageLC {
+  margin-left: 1%;
+  display: flex;
+  height: 65px;
+  margin-right: 19%;
+}
+.game .imageCup {
+  margin-left: 1%;
+  display: flex;
+  height: 75px;
+  margin-right: 19%;
+}
+.game .info {
+  display: flex;
+  justify-content: end;
+}
+.game .info .score {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.game .info .score1 {
+  margin-left: 20px;
+}
+.game .info figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game .info figcaption {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 220px;
+  background-color: #4a9cd6;
+}
+footer img {
+  height: 90px;
+}
+footer #first_footer {
+  display: flex;
+  justify-content: center;
+}
+footer #first_footer img {
+  margin: 15px 10px 0px 0px;
+}
+footer hr {
+  width: 900px;
+}
+footer #second_footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*////////////////////////////////////*/
+@media (max-width: 1100px) {
+  header #header2ndline {
+    justify-content: left;
+    align-items: center;
+  }
+  header #header2ndline .OPTIONS {
+    display: none;
+  }
+  main .list {
+    font-size: 20px;
+  }
+  main .list li {
+    padding: 10px;
+  }
+  main .conteiner .all_matches .game {
+    height: 110px;
+  }
+  main .conteiner .all_matches .game .imageLaliga {
+    height: 70px;
+    margin-right: 15%;
+  }
+  main .conteiner .all_matches .game .imageSuperCup {
+    height: 45px;
+    margin-right: 14%;
+  }
+  main .conteiner .all_matches .game .imageLC {
+    height: 45px;
+    margin-right: 14%;
+  }
+  main .conteiner .all_matches .game .imageCup {
+    height: 55px;
+    margin-right: 14%;
+  }
+  main .conteiner .all_matches .game .info .score {
+    font-size: 35px;
+  }
+  main .conteiner .all_matches .game .info figure img {
+    height: 60px;
+  }
+  main .conteiner .all_matches .game .info figcaption {
+    font-size: 15px;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 70px;
+  }
+  footer hr {
+    max-width: 700%;
+  }
+  footer #second_footer img {
+    height: 70px;
+  }
+}
+@media (max-width: 873px) {
+  main .conteiner .all_matches .game .imageLaliga {
+    height: 65px;
+    margin-right: 5%;
+  }
+  main .conteiner .all_matches .game .imageSuperCup {
+    height: 40px;
+    margin-right: 4%;
+  }
+  main .conteiner .all_matches .game .imageLC {
+    height: 40px;
+    margin-right: 4%;
+  }
+  main .conteiner .all_matches .game .imageCup {
+    height: 50px;
+    margin-right: 4%;
+  }
+}
+@media (max-width: 810px) {
+  main .list {
+    width: 40%;
+    font-size: 15px;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+  main .list li {
+    margin-top: 1%;
+    padding: 7px;
+  }
+  main .conteiner .all_matches .game {
+    height: 110px;
+  }
+  main .conteiner .all_matches .game .imageLaliga {
+    height: 60px;
+    margin-right: 5%;
+  }
+  main .conteiner .all_matches .game .imageSuperCup {
+    height: 35px;
+    margin-right: 4%;
+  }
+  main .conteiner .all_matches .game .imageLC {
+    height: 35px;
+    margin-right: 4%;
+  }
+  main .conteiner .all_matches .game .imageCup {
+    height: 45px;
+    margin-right: 4%;
+  }
+  main .conteiner .all_matches .game .info .score {
+    font-size: 35px;
+  }
+  main .conteiner .all_matches .game .info figure img {
+    height: 50px;
+  }
+  main .conteiner .all_matches .game .info figcaption {
+    font-size: 12px;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 50px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 50px;
+  }
+}
+@media (max-width: 660px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 60px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 55px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    font-size: 30px;
+  }
+  main {
+    margin-bottom: 70px;
+  }
+  main .conteiner .all_matches .element {
+    margin-top: 35px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 40px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 40px;
+  }
+}
+@media (max-width: 590px) {
+  main .conteiner .all_matches .game {
+    height: 90px;
+  }
+  main .conteiner .all_matches .game .imageLaliga {
+    height: 40px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .imageSuperCup {
+    height: 30px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .imageLC {
+    height: 30px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .imageCup {
+    height: 40px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .info .score {
+    font-size: 25px;
+  }
+  main .conteiner .all_matches .game .info figure img {
+    height: 45px;
+  }
+  main .conteiner .all_matches .game .info figcaption {
+    font-size: 10px;
+  }
+}
+@media (max-width: 490px) {
+  main .list {
+    font-size: 15px;
+  }
+  main .list li {
+    padding: 5px;
+  }
+  main .conteiner .all_matches .game {
+    height: 90px;
+  }
+  main .conteiner .all_matches .game .info .score {
+    font-size: 20px;
+  }
+  main .conteiner .all_matches .game .info figure {
+    width: 20px;
+  }
+  main .conteiner .all_matches .game .info figure img {
+    height: 35px;
+  }
+  main .conteiner .all_matches .game .info figcaption {
+    font-size: 10px;
+  }
+}
+@media (max-width: 410px) {
+  main .list {
+    font-size: 15px;
+  }
+  main .list li {
+    padding: 5px;
+  }
+  main .conteiner .all_matches .game {
+    height: 80px;
+  }
+  main .conteiner .all_matches .game .imageLaliga {
+    height: 20px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .imageSuperCup {
+    height: 10px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .imageLC {
+    height: 10px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .imageCup {
+    height: 20px;
+    margin-right: 0%;
+  }
+  main .conteiner .all_matches .game .info .score {
+    font-size: 20px;
+  }
+  main .conteiner .all_matches .game .info figure {
+    width: 0px;
+  }
+  main .conteiner .all_matches .game .info figure img {
+    height: 25px;
+  }
+  main .conteiner .all_matches .game .info figcaption {
+    font-size: 9px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 40px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 35px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 30px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 30px;
+  }
+}/*# sourceMappingURL=fixtures.css.map */

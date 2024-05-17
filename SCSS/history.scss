@@ -1,0 +1,588 @@
+html,body{
+    margin: 0;
+}
+header{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    height: 150px;
+    #header1stline{
+        height:100px ;
+        display: flex;
+        background-color: #4a9cd6;
+        #RM_LOGO_header{
+            margin: 2px 0px 0px 20px;
+            height: 94px;
+        }
+        .text{
+            font-size: 40px;
+            font-family: Inter;
+            margin: auto;
+          }
+    }
+    #header2ndline{
+        height: 60px;
+        background-color: #B1DBF9;
+        display: flex;
+        justify-content: center;
+        .OPTIONS{
+            display: flex;
+            justify-content: center; /* Выравнивание по горизонтали */
+            align-items: center; /* Выравнивание по вертикали */
+            font-family: Inter;
+            height: 60px;
+            width: 250px;
+            font-size: 28px;
+            &:hover{
+                background-color: #82B8EB;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+main{
+    height: auto;
+    background-color: #8fc7e1;
+    .firstpart{
+    display: flex;
+    margin-top: 10px;
+    }
+    .History{
+        font-family:'Times New Roman', Times, serif;
+        margin: 0px 170px 0 170px;
+        font-size: 30px;
+        figcaption{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+    .name{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .trophies{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    figure div{
+        text-align: center;
+    }
+ .secondpart{
+        height: auto;
+        margin-top: 100px;
+        h1{
+            font-family: Inter;
+        }
+        .allcolumn{
+            margin-top: 0px;
+            height: 600px;
+            span{
+                font-size: 30px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            img{
+                height: 70px;
+            }
+            .laliga,.LC,.fifa, .cup, .supercup{
+                margin-top: 30px;
+                display: flex;
+                position: relative;
+                width: 400px;
+                span{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 20px;
+                }
+                .stat1, .stat2, .stat3, .stat4, .stat5 {
+                    visibility: hidden;
+                    display: flex;
+                    width: 600px;
+                    height: auto;
+                    align-items: center;
+                    font-size: 25px;
+                    background-color: rgb(255, 255, 255);
+                    color: #000000;
+                    text-align: center;
+                    border-radius: 25px;
+                    padding: 5px;
+                    position: absolute;
+                    margin-left: 600px;
+                    opacity: 0;
+                    transition: opacity 0.8s ease;
+                }
+                .stat1{
+                    margin-top: 0px;
+                }
+                .stat3{
+                    img{
+                        margin-right: 30px;
+                    }
+                }
+                .stat4{
+                    margin-top:-30px;   
+                }
+                .stat5{
+                    margin-top:-15px;
+                }
+            }
+            .laliga:hover .stat1,
+        .LC:hover .stat2,
+        .fifa:hover .stat3,
+        .cup:hover .stat4,
+        .supercup:hover .stat5{
+                visibility: visible;
+                opacity: 1;
+            }
+            .laliga{
+                margin-left: 10px;
+                span{
+                    margin-left: 35px;
+                }
+            }
+            .fifa{
+                margin-left: 40px;
+                span{
+                    margin-left: 60px;
+                }
+            }
+            .cup{
+                margin-left: 10px;
+                span{
+                    margin-left: 30px;
+                }
+            }
+            .supercup{
+                margin-left: 15px;
+                span{
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+   
+}
+
+footer {
+    height: 220px;
+    background-color: #4a9cd6;
+    
+    img {
+        height: 90px;
+    }
+    
+    #first_footer {
+        display: flex;
+        justify-content: center; 
+        img {
+            margin:15px 10px 0px 0px; 
+        }
+    }  
+    hr{
+        width: 900px;
+    }
+    #second_footer {
+        display: flex;
+        justify-content: center; 
+    }
+}  
+@media (max-width:1260px) {
+    main{
+        .secondpart{
+            .allcolumn{
+                .laliga,.LC,.fifa, .cup, .supercup{
+                    .stat1,.stat2,.stat3,.stat4,.stat5{
+                        margin-left: 500px;
+                        width: 500px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1100px) {
+    header{
+        #header2ndline{
+            justify-content: left;
+            align-items: center;
+            .OPTIONS{
+               display: none;
+            }
+        }
+    }  
+ 
+    main{
+        .firstpart{
+        .History{
+            font-size: 25px;
+            margin: 0px 100px 0 100px;
+            figcaption{
+                font-size: 15px;
+            }
+            h1{
+                font-size: 50px;
+            }
+        }
+        }
+        .secondpart{
+            h1{
+                font-size: 30px;
+            }
+            .allcolumn{
+                margin-top: 0px;
+                height: 1300px;
+                img{
+                    height: 55px;
+                }
+                .laliga,.LC,.fifa, .cup, .supercup{
+                    margin-top: 100px;
+                    display: flex;
+                    position: relative;
+                    width: 400px;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 20px;
+                        font-size: 25px;
+                    }
+                    .stat1, .stat2, .stat3, .stat4, .stat5 {
+                        visibility: visible;
+                        opacity: 1;
+                        margin-left: 10px;
+                    }
+                    .stat1{
+                        margin-top: 80px;
+                    }
+                    .stat2{
+                        margin-top: 80px;
+                    }
+                    .stat3{
+                        margin-top: 80px;
+                        margin-left: 0px;
+                        img{
+                            margin-right: 30px;
+                        }
+                    }
+                    .stat4{
+                        margin-top:80px;   
+                    }
+                    .stat5{
+                        margin-top:80px;
+                    }
+                }
+                .laliga{
+                    margin-top: 30px;
+                    margin-bottom: 270px;
+                    margin-left: 10px;
+                    span{
+                        margin-left: 35px;
+                    }
+                }
+                .LC{
+                    margin-bottom: 170px;
+                }
+                .fifa{
+                    margin-bottom: 150px;
+                    margin-left: 30px;
+                    span{
+                        margin-left: 60px;
+                    }
+                }
+                .cup{
+                    margin-bottom: 200px;
+                    margin-left: 10px;
+                    span{
+                        margin-left: 30px;
+                    }
+                }
+                .supercup{
+                    margin-left: 15px;
+                    span{
+                        margin-left: 35px;
+                    }
+                }
+            }
+            
+        }
+    }
+    footer{
+        height: auto;
+        #first_footer{
+            img{
+                height: 70px;
+            }
+        }
+        hr{
+            max-width: 700%;
+        }
+        #second_footer{
+            img{
+                height: 70px;
+            }
+        }
+    }  
+}
+@media (max-width:1260px) {
+    main{
+        .secondpart{
+            .allcolumn{
+                .laliga,.LC,.fifa, .cup, .supercup{
+                    .stat1,.stat2,.stat3,.stat4,.stat5{
+                        width: 500px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:810px) {
+    main{
+        .firstpart{
+        .History{
+            font-size: 25px;
+            margin: 0px 50px 0 50px;
+            img{
+                height: 200px;
+            }
+            figcaption{
+                font-size: 10px;
+            }
+            h1{
+                font-size: 40px;
+            }
+        }
+        }
+        .secondpart{
+            h1{
+                font-size: 28px;
+            }
+            .allcolumn{
+                img{
+                    height: 60px;
+                }
+            }
+        }
+    }
+    footer{
+        height: auto;
+        #first_footer{
+            img{
+                height: 50px;
+            }
+        }
+        hr{
+            max-width: 70%;
+        }
+        #second_footer{
+            img{
+                height: 50px;
+            }
+        }
+    } 
+}
+@media (max-width:660px) {
+    header{
+        height: auto;
+        #header1stline{
+            height: 60px;
+            #RM_LOGO_header{
+                    height: 55px;
+                    margin-left: 0px;
+            }
+            .text{
+                font-size: 30px;
+            }
+        }
+    } 
+    main{
+        .firstpart{
+            margin-top: 0px;
+            .History{
+                h1{
+                    font-size: 30px;
+                }
+                font-size: 22px;
+                margin: 0px 40px 0 40px;
+            }
+            }
+            .secondpart{
+                h1{
+                    font-size: 30px;
+                }
+                .allcolumn{
+                    height: 1000px;
+                    img{
+                        height: 55px;
+                    }
+                    .laliga,.LC,.supercup,.cup,.fifa{
+                        span{
+                            margin-left: 10px;
+                            font-size: 22px;
+                        }
+                    }
+                            .laliga{
+                                margin-bottom: 200px;
+                                .stat1{
+                                    img{
+                                        height: 45px;
+                                    }
+                                    width: 350px;
+                                    font-size: 15px;
+                                }
+                            }
+                            .LC{
+                                margin-bottom: 120px;
+                                .stat2{
+                                    width: 350px;
+                                    font-size: 15px;
+                                    img{
+                                        height: 45px;
+                                    }
+                                }
+                            }
+                            .fifa{
+                                margin-bottom: 100px;
+                                .stat3{
+                                    width: 350px;
+                                    font-size: 15px;
+                                    img{
+                                        height: 45px;
+                                    }
+                                }
+                            }
+                            .cup{
+                                margin-bottom: 150px;
+                                .stat4{
+                                    width: 350px;
+                                    font-size: 15px;
+                                    img{
+                                        height: 45px;
+                                    }
+                                }
+                            }
+                            .supercup{
+                                .stat5{
+                                    width: 350px;
+                                    font-size: 15px;
+                                    img{
+                                        height: 45px;
+                                    }
+                                }
+                            }
+                }
+            }
+    }
+    footer{
+        margin-top: 0;
+        height: auto;
+        #first_footer{
+            img{
+                height: 40px;
+            }
+        }
+        hr{
+            max-width: 70%;
+        }
+        #second_footer{
+            img{
+                height: 40px;
+            }
+        }
+    }
+}
+@media (max-width:520px) {
+    main{
+        .firstpart{
+            .History{
+                h1{
+                    font-size: 25px;
+                }
+                img{
+                    height: 150px;
+                }
+                font-size: 20px;
+                margin: 0px 20px 0 20px;
+            }
+            }
+            .secondpart{
+                h1{
+                    font-size: 25px;
+                }
+                .allcolumn{
+                    img{
+                        height: 50px;
+                    }
+                    .laliga,.LC,.fifa,.cup,.supercup{
+                        .stat1,.stat2,.stat3,.stat4,.stat5{
+                            img{
+                                height: 40px;
+                            }
+                            width: 260px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media (max-width:400px) {
+    header{
+        height: auto;
+        #header1stline{
+            height: 40px;
+            #RM_LOGO_header{
+                    height: 35px;
+                    margin-left: 0px;
+            }
+            .text{
+                margin-left: 0;
+                font-size: 20px;
+            }
+        }
+    }   
+
+    main{
+        .firstpart{
+            .History{
+                h1{
+                    font-size: 20px;
+                }
+                img{
+                    height: 120px;
+                }
+                font-size: 15px;
+                margin: 0px 5px 0 5px;
+            }
+            }
+            .secondpart{
+                h1{
+                    font-size: 20px;
+                }
+            }
+    }
+
+    footer{
+        margin-top: 0;
+        height: auto;
+        #first_footer{
+            img{
+                height: 30px;
+            }
+        }
+        hr{
+            max-width: 70%;
+        }
+        #second_footer{
+            img{
+                height: 30px;
+            }
+        }
+    }
+}

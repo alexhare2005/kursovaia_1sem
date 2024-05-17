@@ -1,0 +1,481 @@
+html,body{
+    margin: 0;
+}
+header{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    height: 150px;
+    #header1stline{
+        height:100px ;
+        display: flex;
+        background-color: #4a9cd6;
+        #RM_LOGO_header{
+            margin: 2px 0px 0px 20px;
+            height: 94px;
+        }
+        .text{
+            font-size: 40px;
+            font-family: Inter;
+            margin: auto;
+          }
+    }
+    #header2ndline{
+        height: 60px;
+        background-color: #B1DBF9;
+        display: flex;
+        justify-content: center;
+        .OPTIONS{
+            display: flex;
+            justify-content: center; /* Выравнивание по горизонтали */
+            align-items: center; /* Выравнивание по вертикали */
+            font-family: Inter;
+            height: 60px;
+            width: 250px;
+            font-size: 28px;
+            &:hover{
+                background-color: #82B8EB;
+                transition: 0.5s;
+            }
+        }
+    }
+    #headerthirdline{  
+        height: 80px;
+        background-color:#DAEDFE;
+        display: flex;
+        .iconCDRey{
+            margin-left:30px;
+        }
+        div{
+            display: flex;
+            font-family: Inter;
+            font-size: 40px;
+            align-items: center;
+            margin-left: 40px;
+        }
+        }
+        #headerfourline{
+            height: 40px;
+            background-color:#DAEDFE;
+            display: flex;
+            justify-content: left;
+            #CDRey{
+                color: rgb(73, 67, 237);
+                border-bottom: 3px solid rgb(73, 67, 237);
+            }
+            .OPTIONS{
+                display: flex;
+                justify-content: center; /* Выравнивание по горизонтали */
+                align-items: center; /* Выравнивание по вертикали */
+                font-family: Inter-Regular;
+                height: 37px;
+                width: 250px;
+                font-size: 20px;
+                &:hover{
+                    color: rgb(73, 67, 237);
+                }
+            }
+        }
+}
+
+main{
+    margin-top: 200px;
+   .round1,.round2{
+    font-family: Inter;
+    font-size: 30px;
+    position: relative; 
+    margin-left: 18%;
+   }
+   .round2{
+    margin-top: 100px;
+   }
+   .match{
+    display: flex;
+    justify-content: center;
+    .game1,.game2,.game3{
+        display: flex;
+        width: 70%;
+        height: 130px;
+        border:1px solid black;
+        border-radius: 35px;
+        .text{
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+        }
+        .info{
+            display: flex;
+            margin-left: 17%;
+            div{
+                font-size: 50px;
+                font-weight: bold;
+                margin-top: 35px;
+            }
+            figure{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }    
+            figcaption{
+                display: flex;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+       
+    }
+    .game1{
+        background-color: white;
+    }
+    .game2{
+        background-color: white;
+    }
+    .game3{
+        background-color: rgb(205, 212, 212);
+    }
+}
+}
+
+footer {
+    margin-top: 100px;
+    height: 220px;
+    background-color: #4a9cd6;
+    
+    img {
+        height: 90px;
+    }
+    
+    #first_footer {
+        display: flex;
+        justify-content: center; 
+        img {
+            margin:15px 10px 0px 0px; 
+        }
+    }  
+    hr{
+        width: 900px;
+    }
+    #second_footer {
+        display: flex;
+        justify-content: center; 
+    }
+}
+
+/*/////////////////////////////////////////////////*/
+@media(max-width:1300px){
+    main{
+        .round1,.round2{
+            font-size: 28px;
+        }
+        .match{
+            .game1,.game2,.game3{
+                .text{
+                    font-size: 20px;
+                }
+                .info{
+                    div{
+                        font-size: 45px;
+                    }
+                    figure{
+                        img{
+                            height: 80px;
+                        }
+                    }    
+                    figcaption{
+                       
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media(max-width:1160px){
+    main{
+        .round1,.round2{
+            font-size: 25px;
+        }
+        .match1{
+            .game1,.game2,.game3{
+                height: auto;
+                .text{
+                    font-size: 15px;
+                }
+                .info{
+                    div{
+                        font-size: 40px;
+                    }
+                    figure{
+                        img{
+                            height: 70px;
+                        }
+                    }    
+                    figcaption{
+                       
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media(max-width:1100px) {
+    header{
+        #header2ndline{
+            justify-content: left;
+            align-items: center;
+            .OPTIONS{
+               display: none;
+            }
+        }
+        #headerthirdline{
+            height: auto;
+            div{
+                font-size: 30px;
+            }
+            .iconCDRey{
+                img{
+                    padding-top: 5px;
+                    padding-bottom:5px;
+                }
+            }
+        }
+        #headerfourline{
+            height: auto;
+            .OPTIONS{
+                width: 200px;
+                font-size: 15px;
+            }
+        }
+    }
+    
+    footer{
+        height: auto;
+        #first_footer{
+            img{
+                height: 70px;
+            }
+        }
+        hr{
+            max-width: 700%;
+        }
+        #second_footer{
+            img{
+                height: 70px;
+            }
+        }
+    }  
+}
+@media(max-width:1024px){
+    main{
+        margin-top: 150px;
+        .round1,.round2{
+            font-size: 16px;
+        }
+        .round2{
+            margin-top: 50px;
+        }
+        .match{
+            .game1,.game2,.game3{
+                height: auto;
+                .text{
+                    font-size: 10px;
+                }
+                .info{
+                    margin-left: 15%;
+                    div{
+                        font-size: 35px;
+                    }
+                    figure{
+                        img{
+                            height: 60px;
+                        }
+                    }    
+                    figcaption{
+                        font-size: 13px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media (max-width:810px) {
+    header{
+        #headerfourline{
+            height: auto;
+            .OPTIONS{
+                height: 30px;
+                width: 150px;
+                font-size: 13px;
+            }
+        }
+    }
+    main{
+        .match{
+            .game1,.game2,.game3{
+                .info{
+                    margin-left: 7%;
+                }
+            }
+        }
+    }
+    footer{
+        height: auto;
+        #first_footer{
+            img{
+                height: 50px;
+            }
+        }
+        hr{
+            max-width: 70%;
+        }
+        #second_footer{
+            img{
+                height: 50px;
+            }
+        }
+    } 
+}
+@media (max-width:660px) {
+    header{
+        height: auto;
+        #header1stline{
+            height: 60px;
+            #RM_LOGO_header{
+                    height: 55px;
+                    margin-left: 0px;
+            }
+            .text{
+                font-size: 30px;
+            }
+        }
+        #headerthirdline{
+            div{
+                font-size: 20px;
+                margin-left: 20px;
+            }
+            .iconCDRey{
+                img{
+                    height: 45px;
+                }
+            }
+        }
+        #headerfourline{
+            height: auto;
+            .OPTIONS{
+                height: 20px;
+                width: 120px;
+                font-size: 10px;
+            }
+        }
+    } 
+   main{
+    margin-top: 40px;
+    margin-bottom: 70px;
+   }
+    footer{
+        margin-top: 0;
+        height: auto;
+        #first_footer{
+            img{
+                height: 40px;
+            }
+        }
+        hr{
+            max-width: 70%;
+        }
+        #second_footer{
+            img{
+                height: 40px;
+            }
+        }
+    }
+}
+@media (max-width:550px) {
+    main{
+        .round1,.round2{
+            font-size: 15px;
+        }
+        .match{
+            .game1,.game2,.game3{
+                justify-content: center;
+                .text{
+                    display: none;
+                }
+                .info{
+                    margin-left: 0;
+                    div{
+                        font-size: 25px;
+                    }
+                    figure{
+                        img{
+                            height: 40px;
+                        }
+                        figcaption{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+@media (max-width:400px) {
+    header{
+        height: auto;
+        #header1stline{
+            height: 40px;
+            #RM_LOGO_header{
+                    height: 35px;
+                    margin-left: 0px;
+            }
+            .text{
+                margin-left: 0;
+                font-size: 20px;
+            }
+        }
+        #headerthirdline{
+            div{
+                font-size: 15px;
+            }
+            .iconCDRey{
+                img{
+                    height: 40px;
+                }
+            }
+        }
+        #headerfourline{
+            height: auto;
+            .OPTIONS{
+                height: 20px;
+                width: 100px;
+                font-size: 8px;
+            }
+        }
+    }   
+  
+
+    footer{
+        margin-top: 0;
+        height: auto;
+        #first_footer{
+            img{
+                height: 30px;
+            }
+        }
+        hr{
+            max-width: 70%;
+        }
+        #second_footer{
+            img{
+                height: 30px;
+            }
+        }
+    }
+}

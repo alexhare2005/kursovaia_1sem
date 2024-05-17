@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <style type="text/css">
+   body{
+.conteiner{
+    width: 100%;
+    .text{
+        margin: 0 auto;
+        width: 70%;
+        h1{
+            font-size: 60px;
+            margin-top: 8%;
+            font-family: Inter-Bold;
+        }
+        p{
+            font-size: 35px;
+            font-family: Inter-Regular;
+        }
+        img{
+            width: 100%;
+            border-radius: 35px;
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1240px) {
+    .conteiner .text {
+        width:75%;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .conteiner .text {
+        width:80%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 400px)
+{
+.conteiner .text {
+        width:90%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+}
+   </style>
+</head>
+<body>
+        <div class="conteiner">
+            <div class="text">
+                <h1>Kroos: “The return leg at the Bernabéu is going to be the most important match of the season”</h1>
+                <p>“Vini Jr. is not only fast, he's also smart and knows how and when to move,” said the midfielder on the move that made it 0-1.</p>
+                <img src="фоткиКурсач\toni kroos.jpg"/>
+                <p><b>Toni Kroos</b> produced a sensational performance in Munich, including a breathtaking assist for <b>Vini Jr.</b> to score the opening goal. After the clash, the German spoke to the media and said: “I think it's a fair result for both of teams, the result is good enough for us. We had good moments and moments when we were up against it, which is normal in a <b>Champions League</b> semi-final if you're playing away. If they had scored in the first 15 minutes it would have seemed normal, but then they scored goals when we were in control. Once again we've shown our strength here and now we have to go for the second leg.”</p>
+                <p>“<b>Vini Jr.</b> deserves a lot of credit because he's the one who showed for the pass with his movement. He's done well and because I know him, I know he's going into space. That space is opened up by <b>Vini Jr.</b>, it was an important run he made.”</p>
+                <p><b>Special connection with Vini Jr.</b>
+                    <br/>“Players like him always give you the possibility to make passes. He's not only quick, he's also clever and knows how and when to move. He's done well and it's his quality to get into space. It's difficult to stop him there.”</p>   
+                <p><b>Madrid never give up</b>
+                    <br/> “We already know that. Maybe whoever watched the first 15 minutes today. We hung in there, but the plan isn't to let our opponents shoot or give them these chances. There are things we want to improve.”</p>
+                <p><b>Home advantage at the Bernabéu</b>
+                    <br/>“I hope it's an advantage. Normally it is, but you have to do it again.</p>
+            </div>
+        </div>
+</body>
+</html>

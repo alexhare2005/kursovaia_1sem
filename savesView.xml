@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style type="text/css">
+            html, body {
+     overflow: hidden; 
+}
+            .centered-text {
+            font-size: 30px;
+            font-weight: bold;  
+            text-align: center;
+            }
+              @media screen and (max-width: 600px) {
+            .centered-text {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            .centered-text {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-text">
+        BEST Champions League SAVES by COURTOIS
+    </div>
+</body>
+</html>

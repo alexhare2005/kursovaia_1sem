@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+}
+
+header {
+  height: 150px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header #header1stline {
+  height: 100px;
+  display: flex;
+  background-color: #4a9cd6;
+}
+header #header1stline #RM_LOGO_header {
+  margin: 2px 0px 0px 20px;
+  height: 94px;
+}
+header #header1stline .text {
+  font-size: 40px;
+  font-family: Inter;
+  margin: auto;
+}
+header #header2ndline {
+  height: 60px;
+  background-color: #B1DBF9;
+  display: flex;
+  justify-content: center;
+}
+header #header2ndline .OPTIONS {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  font-family: Inter;
+  height: 60px;
+  width: 250px;
+  font-size: 28px;
+}
+header #header2ndline .OPTIONS:hover {
+  background-color: #82B8EB;
+  transition: 0.5s;
+}
+
+main #alltext {
+  height: 2500px;
+}
+main #alltextlc {
+  height: 2100px;
+}
+main #textnacho {
+  height: 2300px;
+}
+main #textendric {
+  height: 2000px;
+}
+main .conteiner {
+  width: 100%;
+}
+
+footer {
+  margin-top: 50px;
+  height: 220px;
+  background-color: #4a9cd6;
+}
+footer img {
+  height: 90px;
+}
+footer #first_footer {
+  display: flex;
+  justify-content: center;
+}
+footer #first_footer img {
+  margin: 15px 10px 0px 0px;
+}
+footer hr {
+  width: 900px;
+}
+footer #second_footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 1256px) {
+  main #alltext {
+    height: 1450px;
+  }
+}
+@media (max-width: 616px) {
+  main #alltext {
+    height: 1200px;
+  }
+}
+/*/////////////////////////////*/
+@media (max-width: 1256px) {
+  main #alltextlc {
+    height: 1250px;
+  }
+}
+@media (max-width: 616px) {
+  main #alltextlc {
+    height: 1000px;
+  }
+}
+/*/////////////////////////*/
+@media (max-width: 1256px) {
+  main #alltextnacho {
+    height: 1300px;
+  }
+}
+@media (max-width: 616px) {
+  main #textnacho {
+    height: 1100px;
+  }
+}
+/*///*/
+@media (max-width: 1256px) {
+  main #textendric {
+    height: 1100px;
+  }
+}
+@media (max-width: 616px) {
+  main #textendric {
+    height: 900px;
+  }
+}
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 1100px) {
+  header #header2ndline {
+    justify-content: left;
+    align-items: center;
+  }
+  header #header2ndline .OPTIONS {
+    display: none;
+  }
+  header #headerthirdline {
+    height: auto;
+  }
+  header #headerthirdline div {
+    font-size: 30px;
+  }
+  header #headerthirdline .iconLaLiga img {
+    height: 65px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    width: 200px;
+    font-size: 15px;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 70px;
+  }
+  footer hr {
+    max-width: 700%;
+  }
+  footer #second_footer img {
+    height: 70px;
+  }
+}
+@media (max-width: 810px) {
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+  }
+  footer {
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 50px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 50px;
+  }
+}
+@media (max-width: 660px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 60px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 55px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    font-size: 30px;
+  }
+  header #headerthirdline div {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  header #headerthirdline .iconLaLiga img {
+    height: 55px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 20px;
+    width: 120px;
+    font-size: 10px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 40px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    height: auto;
+  }
+  header #header1stline {
+    height: 40px;
+  }
+  header #header1stline #RM_LOGO_header {
+    height: 35px;
+    margin-left: 0px;
+  }
+  header #header1stline .text {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  header #headerthirdline div {
+    font-size: 15px;
+  }
+  header #headerthirdline .iconLaLiga img {
+    height: 50px;
+  }
+  header #headerfourline {
+    height: auto;
+  }
+  header #headerfourline .OPTIONS {
+    height: 20px;
+    width: 100px;
+    font-size: 8px;
+  }
+  footer {
+    margin-top: 0;
+    height: auto;
+  }
+  footer #first_footer img {
+    height: 30px;
+  }
+  footer hr {
+    max-width: 70%;
+  }
+  footer #second_footer img {
+    height: 30px;
+  }
+}/*# sourceMappingURL=NEWS.css.map */

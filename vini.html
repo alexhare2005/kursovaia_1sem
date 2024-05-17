@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/playerINFO.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="main-burger.css">
+    <link rel="shortcut icon" type="x-icon" href="фоткиКурсач\rmblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid FC</title>
+</head>
+<body>
+    <header> 
+        <div id="header1stline">
+            <a href="Index.html">
+                <svg id="RM_LOGO_header" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <image href="фоткиКурсач\real-madrid-logo.svg" width="100" height="100" />
+                </svg>     
+            </a>
+            <div class="text">REAL MADRID FC</div>
+        </div>
+        <div id="header2ndline">
+            <a href="PLAYERS.html"><div class="OPTIONS" id="PLAYERS">PLAYERS</div></a>
+            <a href="TABLE.html"><div class="OPTIONS" id="TABLE">TABLE</div></a>
+            <a href="FIXTURES.html"><div class="OPTIONS" id="FIXTURES">FIXTURES</div></a>
+            <a href="HISTORY.html"><div class="OPTIONS" id="HISTORY">HISTORY</div></a>
+            <div class="navigation">
+                <ul>
+                    <li><a href="PLAYERS.html">PLAYERS</a></li>
+                    <li><a href="TABLE.html">TABLE</a></li>
+                    <li><a href="FIXTURES.html">FIXTURES</a></li>
+                    <li><a href="HISTORY.html">HISTORY</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+    </header> 
+
+    <main>
+        <div class="conteiner">
+            <figure>
+                <img src="фоткиКурсач\_80X501_VINI.webp">
+                <figcaption>7 Vini Jr.</figcaption>
+            </figure>
+            <div class="info"><span>Matches played: 22</span><span>Minures played: 1894</span><span>Goals: 21</span><span>Assists: 10</span></div>
+        </div>
+    </main>
+    <footer>
+        <div id="first_footer">
+            <a target="_blank" href="https://www.adidas.co.uk/football"><img id="addas_footer" src="фоткиКурсач\ADIDAS.png"></a>
+            <a target="_blank" href="https://www.emirates.com/us/english/"><img id="flyemirates_footer" src="фоткиКурсач\27436768-no-bg-preview (carve.photos).png"></a>
+            <a target="_blank" href="https://www.hp.com/gb-en/home.html"><img id="hp" src="фоткиКурсач\HP.png"></a>
+            <a target="_blank" href="https://www.playstation.com/en-gb/"><img id="ps" src="фоткиКурсач\ps.png"></a>
+            <a target="_blank" href="https://www.canon.co.uk/"><img id="canon" src="фоткиКурсач\canon.png"></a>
+        </div>
+        <hr>
+        <div id="second_footer">
+            <a target="_blank" href="https://www.youtube.com/channel/UCWV3obpZVGgJ3j9FVhEjF2Q"><img id="YT" src="фоткиКурсач\ut.png"></a>
+            <a target="_blank" href="https://www.instagram.com/realmadrid/"><img id="inst" src="фоткиКурсач\inst.png"></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+       this.classList.toggle('active');
+       document.querySelector('.navigation').classList.toggle('open');
+   })
+   </script>
+</body>
+</html>

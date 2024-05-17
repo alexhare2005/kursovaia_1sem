@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <style type="text/css">
+   body{
+.conteiner{
+    width: 100%;
+    .text{
+        margin: 0 auto;
+        width: 70%;
+        h1{
+            font-size: 60px;
+            margin-top: 8%;
+            font-family: Inter-Bold;
+        }
+        p{
+            font-size: 35px;
+            font-family: Inter-Regular;
+        }
+        img{
+            width: 100%;
+            border-radius: 35px;
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1240px) {
+    .conteiner .text {
+        width:75%;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .conteiner .text {
+        width:80%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 400px)
+{
+.conteiner .text {
+        width:90%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+}
+   </style>
+</head>
+<body>
+        <div class="conteiner">
+            <div class="text">
+                <h1>Getting to know Endrick</h1>
+                <p>The forward has won the league with Palmeiras and was voted the best young player in the Brazilian championship.</p>
+                <img src="фоткиКурсач\endric.jpg"/>
+                <p><b>Endrick </b> Felipe Moreira de Sousa (Brasilia; 21/07/2006) is one of the rising stars of world football. The forward has won the league with Palmeiras and was voted the best young player of the Brazilian championship. Additionally, he has already broken several records at the club due to his age. He is the youngest player in the history of Palmeiras to make his debut with the first team (at 16 years, two months and 15 days) and to score (16 years, three months and four days). And is the only player to have won trophies at every level of the club. </p>
+                <p><b>Endrick</b> had a spectacular 2022. As well as the Brazilian League (in which he scored 3 goals and provided 1 assist in 7 games at the age of 16), he won the São Paulo Junior Cup, where he was voted the best player, the Under-20 Brazilian League and the Under-17 Brazilian Cup, scoring crucial goals in all of them. Brought up through the youth ranks at Palmeiras since 2016 (he was 10 years old), he also won the Paulista Championship at Under-11, Under-13, Under-15 (on 2 occasions) and Under-20. Endrick made his debut in November 2023 with the Brazilian national team at the age of 17.</p>
+            </div>
+        </div>
+</body>
+</html>

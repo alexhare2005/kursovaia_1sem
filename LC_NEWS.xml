@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <style type="text/css">
+   body{
+.conteiner{
+    width: 100%;
+    .text{
+        margin: 0 auto;
+        width: 70%;
+        h1{
+            font-size: 60px;
+            margin-top: 8%;
+            font-family: Inter-Bold;
+        }
+        p{
+            font-size: 35px;
+            font-family: Inter-Regular;
+        }
+        img{
+            width: 100%;
+            border-radius: 35px;
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1240px) {
+    .conteiner .text {
+        width:75%;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .conteiner .text {
+        width:80%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 400px)
+{
+.conteiner .text {
+        width:90%;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+}
+   </style>
+</head>
+<body>
+        <div class="conteiner">
+            <div class="text">
+               <h1>Real Madrid to face Bayern Munich in the Champions League semi-finals</h1>
+        <p>The first leg will be on the road on 30 April or 1 May, with the return coming at the Bernabéu on 7 or 8 May.</p>
+        <img src="фоткиКурсач\team.jpg"/>
+        <p><b>Real Madrid</b> booked their place in the Champions League semi-finals with <b>a win over Manchester City</b> in the quarter-final tie, which was ultimately decided on a penalty shootout. Our team are now set to face Bayern Munich in the next round. The semi-final first leg will be away from home on 30 April or 1 May, while the second will take place at the Santiago Bernabéu on 7 or 8 May.</p>
+        <p>“<b>Vini Jr.</b> deserves a lot of credit because he's the one who showed for the pass with his movement. He's done well and because I know him, I know he's going into space. That space is opened up by <b>Vini Jr.</b>, it was an important run he made.”</p>
+        <p>The other semi-final sees PSG take on Borussia Dortmund. The final is scheduled for 1 June at Wembley (London)</p>   
+        <p><b>Real Madrid</b> once again face the German team in the most repeated clash in the European Cup (26 previous encounters). The last meeting between the two sides was in the semi-finals of the 2017/18 edition on the road to securing La Decimotercera. This season, Bayern finished top of Group A (ahead of Copenhagen, Galatasaray and Manchester United), eliminated Lazio in the last 16 (3-1) and Arsenal in the quarter-finals (3-2).</p>
+            </div>
+        </div>
+</body>
+</html>

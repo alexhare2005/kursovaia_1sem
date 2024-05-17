@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/main.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="main-burger.css">
+    <link rel="shortcut icon" type="x-icon" href="фоткиКурсач\rmblack.png">
+    <title>Real Madrid FC</title>
+</head>
+<body>
+    <header> 
+        <div id="header1stline">
+            <svg id="RM_LOGO_header" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <image href="фоткиКурсач\real-madrid-logo.svg" width="100" height="100" />
+            </svg>            
+            <div class="text">REAL MADRID FC</div>
+        </div>
+        <div id="header2ndline">
+            <a href="PLAYERS.html"><div class="OPTIONS" id="PLAYERS">PLAYERS</div></a>
+            <a href="TABLE.html"><div class="OPTIONS" id="TABLE">TABLE</div></a>
+            <a href="FIXTURES.html"><div class="OPTIONS" id="FIXTURES">FIXTURES</div></a>
+            <a href="HISTORY.html"><div class="OPTIONS" id="HISTORY">HISTORY</div></a>
+            <div class="navigation">
+                <ul>
+                    <li><a href="PLAYERS.html">PLAYERS</a></li>
+                    <li><a href="TABLE.html">TABLE</a></li>
+                    <li><a href="FIXTURES.html">FIXTURES</a></li>
+                    <li><a href="HISTORY.html">HISTORY</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div> 
+    </header>  
+    <main>
+        <div class="News">
+            <div class="firstline">
+                <figure>
+                    <a href="kroos_news.html">
+                        <img id="kroos" src="фоткиКурсач\toni kroos.jpg">
+                        <figcaption>Kroos: “The return leg at the Bernabéu is going to be the most important match of the season”</figcaption>
+                    </a>
+                </figure>
+    
+                <figure>
+                    <a href="LC_NEWS.html">
+                           <img src="фоткиКурсач\team.jpg">
+                        <figcaption>Real Madrid to face Bayern Munich in the Champions League semi-finals</figcaption> 
+                    </a>
+                </figure>
+                <figure>
+                    <a href="nacho_news.html">
+                        <img id="nacho" src="фоткиКурсач\nacho.webp">
+                        <figcaption>Nacho: “These are the magical nights you dream of as a kid"</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <div class="secondline">
+                <figure>
+                    <a href="Endrick_news.html">
+                        <img id="endric" src="фоткиКурсач\endric.jpg">
+                        <figcaption>Getting to know Endrick</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="savesView.html">
+                        <img id="courtios" src="фоткиКурсач\tibo-kurtua-8.webp">
+                        <figcaption>BEST Champions League SAVES by COURTOIS</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="Matchreview.html">
+                        <img src="фоткиКурсач\penalties.jpg">
+                    <figcaption>Match review<br> 1-1(3-4 pens): Madrid book place in Champions League semi-finals</figcaption>
+                    </a>
+                </figure>
+            </div>
+        </div>  
+        <div class="match">
+            <h1 id="matchHeading">NEXT MATCH:<div id="timer"></div></h1>
+            <div class="conteiner">
+            <a href="FIXTURES.html"><img id="b2" src="фоткиКурсач\button — копия.png" title="SEE ALL RESULTS"></a>
+            <div id="rectangle">
+                <div class="firstlinematch"><div class="text">19 MAY</div></div>
+                <div class="secondlinematch">
+                    <figure>
+                        <img src="фоткиКурсач\RM_LOGO.png">
+                    <figcaption>Real Madrid</figcaption>
+                </figure>
+                <figure>
+                    <img src="фоткиКурсач\LC.png">
+                <figcaption>23:00</figcaption>
+                </figure>
+                <figure>
+                    <img src="фоткиКурсач\bayern.png">
+                <figcaption>Bayern Munich</figcaption>
+                </figure>
+            </div>
+            </div> 
+            <a href="FIXTURES.html"><img id="b1" src="фоткиКурсач\button.png" title="SEE NEXT MATCHES"></a>
+        </div>
+        </div>
+       
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const matchDate = new Date("2024-05-19T23:00:00");
+        
+                function updateTimer() {
+                    const now = new Date();
+                    const timeDiff = matchDate - now;
+        
+                    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+        
+                    const timerElement = document.getElementById("timer");
+                    timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s `;
+                }
+        
+                setInterval(updateTimer, 1000);
+            });
+        document.querySelector('.burger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.navigation').classList.toggle('open');
+})
+        </script>
+        
+    
+
+    </main>
+    <aside>
+        <h1>Official App Fan</h1>
+        <div class="app">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mcentric.mcclient.MyMadrid&hl=en&gl=US"> <img src="фоткиКурсач\pngwing.com (5).png"></a>
+           
+        </div>
+    </aside>
+    <footer>
+        <div id="first_footer">
+            <a target="_blank" href="https://www.adidas.co.uk/football"><img id="addas_footer" src="фоткиКурсач\ADIDAS.png"></a>
+            <a target="_blank" href="https://www.emirates.com/us/english/"><img id="flyemirates_footer" src="фоткиКурсач\27436768-no-bg-preview (carve.photos).png"></a>
+            <a target="_blank" href="https://www.hp.com/gb-en/home.html"><img id="hp" src="фоткиКурсач\HP.png"></a>
+            <a target="_blank" href="https://www.playstation.com/en-gb/"><img id="ps" src="фоткиКурсач\ps.png"></a>
+            <a target="_blank" href="https://www.canon.co.uk/"><img id="canon" src="фоткиКурсач\canon.png"></a>
+        </div>
+        <hr>
+        <div id="second_footer">
+            <a target="_blank" href="https://www.youtube.com/channel/UCWV3obpZVGgJ3j9FVhEjF2Q"><img id="YT" src="фоткиКурсач\ut.png"></a>
+            <a target="_blank" href="https://www.instagram.com/realmadrid/"><img id="inst" src="фоткиКурсач\inst.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
